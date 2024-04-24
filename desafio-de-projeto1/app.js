@@ -5,12 +5,13 @@ let xpJogador = 0;
 let jogatorTemXp ;
 let rankJogador = "";
 
-while (partidas >= partidasGanhas) {
-    xpJogador = xpJogador + 200;
-    console.log(xpJogador);
-    partidasGanhas++;
+function calcularXpTotal(partidas, partidasGanhas){
+    for(let i = partidasGanhas; i <= partidas; i++){
+        xpJogador = partidasGanhas * 250; 
+    }
 }
 
+calcularXpTotal(partidas, partidasGanhas);
 
 if(xpJogador != 0){
     jogatorTemXp = true;
@@ -43,7 +44,7 @@ switch (jogatorTemXp) {
         break;
 
     default:
-        break;
+        rankJogador = "Carvão";
 }
 
-alert(`O Heroi de nome ${nomeJogador} está no ranking de ${rankJogador} e possui ${xpJogador} xp`);
+alert(`O Jogador de nome ${nomeJogador} está no ranking de ${rankJogador} e possui ${xpJogador} xp`);
