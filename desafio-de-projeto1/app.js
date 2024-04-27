@@ -1,4 +1,5 @@
 let nomeJogador = prompt("Informe o nome do jogador");
+let teste= '';
 let partidas = parseInt(prompt("Informe a quandidade de partidas que jogou"))
 let partidasGanhas = parseInt(prompt("Informe quantas partida o heroi ganhou"));
 let xpJogador = 0;
